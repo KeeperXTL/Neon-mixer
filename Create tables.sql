@@ -1,3 +1,5 @@
+use NeonMixer
+
 CREATE TABLE Users(
 userId INTEGER NOT NULL IDENTITY(1,1),
 login NVARCHAR(64) NOT NULL,
