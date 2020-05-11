@@ -1,3 +1,13 @@
+IF EXISTS (select * from sys.databases where name = 'NeonMixer')
+BEGIN 
+    DROP DATABASE NeonMixer
+    PRINT 'DROP DATABASE NeonMixer'
+END
+    CREATE DATABASE NeonMixer;
+    PRINT 'CREATE DATABASE NeonMixer'
+
+GO
+
 use NeonMixer
 
 CREATE TABLE Users(
