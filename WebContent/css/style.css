@@ -1,0 +1,422 @@
+@font-face {
+    font-family: 'tr2n';
+    src: url(../fonts/Tr2n.ttf)
+}
+
+@font-face {
+    font-family: 'Abel-Regular';
+    src: url(../fonts/Abel-Regular.ttf);
+}
+body {
+    background-color: black;
+    display: flex; 
+    flex-direction: column;
+    font-family: 'Abel-Regular';
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.cl-header {
+    position: fixed;
+    top: 0;
+    min-width: 95%;
+}
+
+nav {
+    border: 3px solid magenta;
+    border-top: none;
+    background-color: rgb(15, 15, 15);
+    border-radius: 0px 0px 25px 25px;
+    display: flex; 
+    flex-direction: row;
+    box-shadow: 0 0 15px magenta;
+}
+
+.nav-left {
+    text-align: left;
+    width: 50%;
+}
+
+.nav-right {
+    text-align: right;
+    width: 50%;
+}
+
+.nav-left > a {
+    padding-left: 25px;
+    padding-bottom: 10;
+    font-family: 'tr2n';
+    font-size: 36pt;
+    margin: 10px;
+    background: linear-gradient(to right, red, orange, yellow, green, darkturquoise, dodgerblue, magenta);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-right > a {
+    padding-right: 25px;
+    padding-bottom: 10;
+    font-family: 'Abel-Regular';
+    font-size: 32pt;
+    margin: 10px;
+    background: linear-gradient(to right, red, orange, yellow, green, darkturquoise, dodgerblue, magenta);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+dialog > h1 {
+	padding-right: 25px;
+    padding-bottom: 10;
+    font-family: 'Abel-Regular';
+    font-size: 32pt;
+    margin: 10px;
+    background: linear-gradient(to right, red, orange, yellow, green, darkturquoise, dodgerblue, magenta);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.al-right {
+    text-align: right;
+}
+
+.main-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 100%;
+}
+
+.column-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 27%;
+    max-width: 27%;
+    min-height: 85vh;
+    max-height: 85vh;
+    border: 7px solid magenta;
+    border-radius: 50px 175px 50px 175px;
+    box-shadow: 0 0 25px magenta;
+    overflow-y: auto;
+}
+
+.column-form::-webkit-scrollbar {
+    width: 0px;
+}
+
+.col-content-top::-webkit-scrollbar {
+    width: 0px;
+}
+
+.column-form > a {
+    font-size: 36pt;
+    font-family: 'Abel-Regular';
+    box-shadow: 0px 7px 3px -3px yellow;
+    text-decoration: none;
+}
+
+.column-form > .top-marg {
+    margin: 150px 35px 10px 35px;
+}
+
+.column-form > .bot-marg {
+    margin: 10px 35px 150px 35px;
+}
+
+.column-form > .mid-marg {
+    margin: 10px 35px 10px 35px;
+}
+
+p {
+    color: orange;
+    font-size: 34pt;
+    font-family: 'Abel-Regular';
+}
+
+.column-form > form > .top-marg {
+    margin: 150px 35px 10px 35px;
+}
+
+.column-form > form > .bot-marg {
+    margin: 10px 35px 150px 35px;
+}
+
+.column-form > form > .mid-marg {
+    margin: 10px 35px 10px 35px;
+}
+
+form {
+    width: 75%;
+    margin: 50px 35px 50px 35px;
+    text-align: center;
+}
+
+input[type='range'] {
+    overflow: hidden;
+    width: 100%;
+    -webkit-appearance: none;
+    background-color: orangered;
+    height: 10px;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+    height: 10px;
+    -webkit-appearance: none;
+    color: turquoise;
+    margin-top: -1px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    width: 0px;
+    -webkit-appearance: none;
+    height: 10px;
+    cursor: ew-resize;
+    background: #434343;
+    box-shadow: -500px 0 0 500px turquoise;
+}
+
+.row-form-main {
+    min-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.row-form {
+    min-width: 40%;
+    max-width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.row-form > p {
+    font-size: 18pt;
+}
+
+.row-form-main > input[type="text"] {
+    width: 30%;
+    background-color: rgb(15, 15, 15);
+    border: none;
+    height: 24px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 7px rgb(15, 15, 15);
+}
+
+.row-form-main > input[type="number"] {
+    width: 40%;
+    background-color: rgb(15, 15, 15);
+    border: none;
+    height: 24px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 7px rgb(15, 15, 15);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: push-button;
+    -moz-appearance: push-button;
+    appearance: push-button;
+    margin: 0;
+}
+
+.row-form-main > span > button {
+    height: 25px;
+    background-color: transparent;
+    border: 2px solid orange;
+    width: 25px;
+    color: white;
+    box-shadow: 0 0 5px orange;
+    transition-duration: 0.4s;
+}
+
+.row-form-main > span > button:hover{
+    background-color: orange;
+}
+
+.full-width {
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.row-form > select {
+    width: 30%;
+    background-color: rgb(15, 15, 15);
+    border: none;
+    height: 24px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 7px rgb(15, 15, 15);
+    margin-bottom: 15px;
+}
+
+.add-button {
+    height: 35px;
+    background-color: transparent;
+    border: 2px solid lime;
+    color: white;
+    box-shadow: 0 0 5px lime;
+    transition-duration: 0.4s;
+}
+
+.add-button:hover{
+    background-color: lime;
+    color: black;
+}
+
+.rem-button {
+    height: 35px;
+    margin-left: 10px;
+    background-color: transparent;
+    border: 2px solid red;
+    color: white;
+    box-shadow: 0 0 10px red;
+    transition-duration: 0.4s;
+}
+
+.rem-button:hover{
+    background-color: red;
+    color: black;
+}
+
+.orange {
+    color: orange;
+    margin: 20px;
+}
+
+.blue {
+    color: turquoise;
+    margin: 20px;
+}
+
+.normal {
+
+    font-size: 18pt;
+}
+
+table {
+    width: 80%;
+    border: solid rgb(30, 30, 30) 2px;
+    box-shadow: 0 0 7px rgb(30, 30, 30);
+}
+
+td {
+    border: solid rgb(30, 30, 30) 2px;
+    box-shadow: 0 0 7px rgb(30, 30, 30);
+}
+
+tr {
+    border: solid rgb(30, 30, 30) 2px;
+    box-shadow: 0 0 7px rgb(30, 30, 30);
+    font-size: 18pt;
+    color: orange;
+}
+
+.col-content-top {
+	display: flex;
+	width: 100%;
+	min-height: 60%;
+	align-items: center;
+	flex-direction: column;
+    overflow-y: auto;
+}
+
+.col-content-bot {
+	display: flex;
+	width: 100%;
+	height: 40%;
+	align-items: center;
+	flex-direction: column;
+}
+
+#flavorElement {
+    padding-top: 25px;
+}
+
+.nav-right > a {
+	cursor: pointer;
+}
+
+dialog[open] {
+	display: flex;
+	flex-direction: column;
+	background: black;
+    border: 7px solid magenta;
+    border-radius: 35px;
+    box-shadow: 0 0 25px magenta;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10%;
+}
+
+dialog > button[type=button] {
+	height: 35px;
+    margin-left: 10px;
+    background-color: transparent;
+    border: 2px solid red;
+    color: white;
+    box-shadow: 0 0 10px red;
+    transition-duration: 0.4s;
+}
+
+dialog > button[type=button]:hover {
+	background-color: red;
+	color: black;
+}
+
+dialog > form {
+	display: flex;
+	flex-direction: column;
+	margin: 0px;
+}
+
+dialog > form > input[type=text],
+dialog > form > input[type=password] {
+	width: 400px;
+    background-color: rgb(15, 15, 15);
+    border: none;
+    height: 24px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 7px rgb(15, 15, 15);
+    margin-bottom: 25px;
+}
+
+dialog > button[type=submit] {
+	height: 35px;
+    margin-left: 10px;
+    background-color: transparent;
+    border: 2px solid lime;
+    color: white;
+    box-shadow: 0 0 5px lime;
+    transition-duration: 0.4s;
+    margin-bottom: 10px;
+}
+
+dialog > button[type=submit]:hover {
+	background-color: lime;
+	color: black;
+}
+
+.col-content-bot > input[type=text] {
+	width: 30%;
+    background-color: rgb(15, 15, 15);
+    border: none;
+    height: 24px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 7px rgb(15, 15, 15);
+    margin-bottom: 15px;
+}
